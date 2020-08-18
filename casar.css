@@ -1,0 +1,13 @@
+.carousel .carousel-item img {
+  width: 18rem;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow:  21px 21px 58px #999999, 
+              -21px -21px 58px #ffffff;
+  }
+
+
+
+  .row{
+    padding-top: 20px;
+   
+  }
