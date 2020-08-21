@@ -1,7 +1,10 @@
 body{
-  font-family: 'Tajawal', sans-serif;
-  font-weight: 900;
+  font-family: 'Goldenbook regular';
 
+}
+
+.brand-logo{
+  font-family: 'Goldenbook light';
 }
 
 .carousel .carousel-item img {
@@ -66,7 +69,7 @@ body{
   }
 
   .collection-item {
-   
+    color:black;
    padding: 4px 6px;
  
    }
@@ -77,6 +80,7 @@ body{
     font-size: 10px;
    }
 
+  
 
 
 
@@ -90,10 +94,26 @@ footer {
   border: none;
   background: #fffbf888;
 
-font-family: 'Tomorrow', sans-serif;
+font-family: 'Goldenbook Light';
 
 }
 
+
+@font-face {
+  font-family: "Goldenbook Light";
+  src: url("i/font/GoldenbookLight.otf");
+
+ }
+ @font-face {
+  font-family: "Goldenbook Regular";
+  src: url("i/font/GoldenbookRegular.otf");
+
+ }
+ @font-face {
+  font-family: "Goldenbook Bold" ;
+  src: url("i/font/GoldenbookBold.otf");
+
+ }
 
 @media screen and (max-width:700px) {
   iframe{
