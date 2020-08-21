@@ -29,8 +29,8 @@
           <a href="#" data-target="mob" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#"><i class="material-icons">search</i></a></li>
-            <li><a href="read.html#modin" class=" modal-trigger">Se connecter</a></li>
-            <li ><a href="read.html#modine" class="btn white teal-text darken-4 modal-trigger"> S'inscrire</a></li>
+            <li><a href="#modin" class="modal-trigger" >Se connecter</a></li>
+            <li ><a href="#modine" class="btn white teal-text darken-4 modal-trigger"> S'inscrire</a></li>
           </ul>
         </div>
     </nav>
@@ -772,6 +772,68 @@
 </div>
 
 
+
+<!--Modal login INSCRIP-->
+<div id="modine" class="modal">
+    <div class="modal-content">
+      <h4>Connexion au Compte</h4>
+      <p>Renseigner les info ci dessous pour vous inscrire.</p>
+
+      <div class="row">
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate">
+            <label for="name">Nom</label>
+          </div>
+        </div>
+  
+      
+        <div class="row">
+            <div class="input-field s12">
+              <input type="email" id="email1" class="validate">
+              <label for="email1">Email</label>
+            </div>
+          </div> 
+
+    <div class="row">
+      <div class="input-field s12">
+        <input type="password" id="pass" class="validate">
+        <label for="pass">Mot de passe</label>
+      </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn waves-effect waves-light modal-action modal-close" style=" background: #000051;">
+        <i class="material-icons left">east</i> Valider</button>
+    </div>
+  </div>
+
+<!--Modal login SE CONNCECT-->
+  <div id="modin" class="modal">
+      <div class="modal-content">
+        <h4>Connexion au Compte</h4>
+        <p>Renseigner les info ci dessous pour vous connecter.</p>
+    
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email2" type="email" class="validate">
+            <label for="email2">Email ou Pseudo</label>
+          </div>
+        </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="password" id="pass2" class="validate">
+          <label for="pass2">Mot de passe</label>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn waves-effect waves-light modal-action modal-close" style=" background: #000051;">
+          <i class="material-icons left">east</i> Valider</button>
+      </div>
+    </div>
+<!--FIN MODAL-->
+
 <footer>
     <p>lecture.Cheikh@gmail.com</p>        
     <p>Copyright &copy; Casar  &nbsp; | &nbsp; <script>document.write(new Date().getFullYear())</script> </p>
@@ -788,6 +850,11 @@
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {dist: -80 , padding:400 }); 
              });
+
+             document.addEventListener('DOMContentLoaded', function() {
+                  var elems = document.querySelectorAll('.modal');
+                  var instances = M.Modal.init(elems, {});
+                });
     </script>
        
 </body>
